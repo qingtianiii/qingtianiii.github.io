@@ -1,0 +1,101 @@
+#content {
+	position: absolute;
+	top: 64px;
+	bottom: 48px;
+	left: 0;
+	right: 0;
+}
+#content img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+#register-form {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	/*max-width: 1200px;*/
+	width: 570px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+h2 {
+	color: grey;
+	font-size: 40px;
+	margin-bottom: 30px;
+	text-shadow: 0 0 10px lightblue;
+}
+
+#register-form li {
+	margin-bottom: 20px;
+}
+#register-form input {
+	margin-top: -2px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	background-color: #e4e1e1;
+	padding-left: 4px;
+}
+/* 性别 */
+#register-form li:nth-of-type(4) {
+	margin-left: 95px;
+}
+#register-form label {
+	display: inline-block;
+	width: 100px;
+}
+#register-form label[for="male"],#register-form label[for="female"]  {
+	width: auto;
+}
+input[type="radio"] {
+	height: auto!important;
+}
+input[type="radio"], input[type="radio"] + label {
+	transition: all .5s;
+}
+input[type="radio"]:checked {
+	margin-right: 25px;
+}
+input[type="radio"]:checked + label {
+	color: red;
+	margin-right: 25px
+}
+.attention {
+	color: red;
+}
+#register-form button {
+	height: 50px;
+	width: 100px;
+	background-color: #886b61;
+	font-size: 20px;
+	color: white;
+	letter-spacing: 5px;
+	border: none;
+	border-radius: 10px;
+	text-shadow: 0 0 10px;
+	box-shadow:  4px 2px 3px black;
+	outline: none;
+	cursor: pointer;
+	transition: all .5s;
+	float: right;
+}
+#register-form button:hover {
+	background-color: #715951;
+}
+#register-form button span {
+	margin-right: -5px;
+}
+/*#register-form ::-webkit-input-placeholder {
+	color: grey;
+	font-size: 15px;
+}*/
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

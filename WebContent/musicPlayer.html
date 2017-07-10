@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐播放</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/musicPlayer.css">
+</head>
+<body>
+	<img id="bg-img">
+	<div id="header">
+		<span id="logo">Music</span>
+		<div id="search-box">
+			<input type="text" name="search" id="search" placeholder="搜索歌名或歌手">
+			<a href="javascript:;" id="search-btn" title="快捷键: [Enter]"></a>
+		</div>
+		<ul id="header-link">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="musicPlayer.html">我的音乐</a></li>
+			<li><a href="singerList.html">歌手</a></li>
+			<li><a href="topList.html">排行榜</a></li>
+			<li><a href="playList.html">歌单</a></li>
+		</ul>
+		<ul id="login">
+			<li><a href="login.html">登录</a></li>
+			<li><a href="register.html">注册</a></li>
+		</ul>
+	</div>
+	<div id="music-player">
+		<div id="player-body">
+			<div id="player-list">
+				<ul class="list-info">
+					<li>歌曲</li>
+					<li>歌手</li>
+					<li>时间</li>
+				</ul>
+				<div class="list-song">
+					<ul id="loveisover">
+						<span class="list-number">1</span>
+						<li>Love is over</li>
+						<li>李健</li>
+						<li>05:12</li>
+					</ul>
+					<ul id="aiya">
+						<span class="list-number">2</span>
+						<li>爱呀</li>
+						<li>金玟岐</li>
+						<li>04:12</li>
+					</ul>
+					<ul id="loveisover">
+						<span class="list-number">3</span>
+						<li>岁月神偷</li>
+						<li>金玟岐</li>
+						<li>02:45</li>
+					</ul>
+					<ul id="loveisover">
+						<span class="list-number">4</span>
+						<li>心动</li>
+						<li>陈洁仪</li>
+						<li>03:50</li>
+					</ul>
+				</div>
+				</ul>
+			</div>
+			<div id="player-lrc-box">
+				<div id="music-pic">
+					<div id="singer-info-box">
+						<span class="hover-dark"></span>
+						<span class="singer-info"></span>
+					</div>
+				</div>
+				<div id="player-lrc"></div>
+			</div>
+		</div>
+		<div id="player">
+			<audio id="audio"></audio>
+			<div id="func-select">
+				<a href="javascript:;" id="pre" title="快捷键: ctrl+←"></a>
+				<a href="javascript:;" id="play" title="快捷键: [空格]"></a>
+				<a href="javascript:;" id="pause" title="快捷键: [空格]"></a>
+				<a href="javascript:;" id="next" title="快捷键: ctrl+→"></a>	
+			</div>
+			<div id="music-proccess-box">
+				<span id="music-info">Love is over</span>
+				<div id="music-time">
+					<span>0:00</span>
+					<span> / </span>
+				</div>
+				<div id="music-proccess">
+					<div id="music-proccess-line">
+						<span></span>
+					</div>
+					<span id="music-proccess-circle"></span>
+				</div>
+			</div>
+				<a href="javascript:;" id="loop" class="order" title="快捷键: [o]"></a>
+				<a href="javascript:;" id="love-it"></a>
+				<a href="javascript:;" id="download"></a>
+				<div id="volume">
+					<a href="javascript:;" id="volume-btn" class="volume-on" title="快捷键: [v]"></a>
+					<div id="volume-box" title="快捷键: 增大ctrl+↑ 减小ctrl+↓">
+						<div id="volume-line">
+							<span></span>
+						</div>
+						<span id="volume-circle"></span>
+					</div>
+				</div>
+		</div>
+	</div>
+	<script src="js/musicPlayer.js"></script>
+</body>
+</html>

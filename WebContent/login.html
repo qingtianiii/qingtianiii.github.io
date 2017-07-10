@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div id="header">
+		<span id="logo">Music</span>
+		<div id="search-box">
+			<input type="text" name="search" id="search" placeholder="搜索歌名或歌手">
+			<a href="javascript:;" id="search-btn" title="快捷键: [Enter]"></a>
+		</div>
+		<ul id="header-link">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="musicPlayer.html">我的音乐</a></li>
+			<li><a href="singerList.html">歌手</a></li>
+			<li><a href="topList.html">排行榜</a></li>
+			<li><a href="playList.html">歌单</a></li>
+		</ul>
+		<ul id="login">
+			<li><a href="login.html">登录</a></li>
+			<li><a href="register.html">注册</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<img src="img/bg1.jpg">
+		<form id="login-form" name="loginForm" onsubmit="return checkIdentity();" method="post" action="forward.html">
+			<h2>login</h2>
+			<ul>
+				<li>
+					<input type="text" name="username" id="username" placeholder="用户名">
+				</li>
+				<li>
+					<input type="password" name="password" id="password" placeholder="密码">
+				</li>
+			</ul>
+			<button type="submit">登录</button>
+			<a href="register.html"><button type="button">注册</button></a>
+		</form>
+	</div>
+	<div id="footer">
+		<p>All rights reserved</p>
+		<p>Copyright © 1998 - 2017</p>
+	</div>
+	<script src="js/basic.js"></script>
+	<script src="js/reg.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>

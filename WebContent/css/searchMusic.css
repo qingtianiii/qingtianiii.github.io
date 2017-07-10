@@ -1,0 +1,128 @@
+#search-box a {
+	display: inline-block;
+	border: 2px solid white;
+	border-radius: 50%;
+	height: 9px;
+	width: 9px;
+/*	margin-left: 10px;*/
+	cursor: pointer;
+	transition: all .2s;
+	position: relative;
+}
+#search-box a:hover {
+	/*box-shadow: 0px 0px 20px black;*/
+	border-color: #b6eaea;
+}
+#search-box a:hover:after {
+	border-color: #b6eaea;
+}
+#search-box a:after {
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 9px;
+	width: 7px;
+	display: inline-block;
+	border-top: 2px solid white;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+#search-box input{
+	width: 76%;
+	transition: all 1s;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	border: none;
+	position: relative;
+	top: -1px;
+	font-size: 14px;
+}*/
+/* 设置placeholder的颜色 */
+::-webkit-input-placeholder {
+	color: white;
+}
+/*#search-result {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+
+}*/
+/* 搜索结果 */
+#song-list {
+	border: 1px solid black;
+	margin: 50px 100px;
+	text-align: center;
+	overflow: hidden;
+	min-width: 964px;
+}
+#song-list ul {
+	-webkit-user-select: none;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+	padding: 5px 0;	
+	color: #139ddb;
+	cursor: pointer;
+	transition: all .5s;
+	font-size: 20px;
+}
+#song-list ul:first-child {
+	background-color: #333!important;
+	color: white;
+	padding: 3px 0;
+	cursor: default;
+}
+#song-list ul:nth-of-type(odd) {
+	background-color: white;
+}
+#song-list ul:nth-of-type(odd):hover {
+	background-color: #e0dede;
+	color: white;
+}
+#song-list ul:nth-of-type(even) {
+	background-color: #f5f3f3;
+}
+#song-list ul:nth-of-type(even):hover {
+	background-color: #e0dede;
+	color: white;
+}
+#song-list li {
+	display: inline-block;
+	float: left;
+	width: 25%;
+}
+#song-list a {
+	font-family: sans-serif;
+	display: block;
+	width: 100%;
+	font-size: 35px;
+	text-decoration: none;
+	/* 通过遮挡背景颜色来实现效果的 */
+	color: black;
+	background-image: repeating-linear-gradient(-45deg, white, white 6px, transparent 8px);
+	background-color: #e0dede;
+	-webkit-user-select: none;
+	/*background-image: linear-gradient(-45deg, red 0%,blue 25%,green 50%,yellow );*/
+	animation-name: toright;
+	animation-duration: 16s; 
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	transition: all .4s;
+}
+#song-list a:hover {
+	text-shadow: 0 -16px 0px rgba(0,0,0, .8);
+	transform: scale(2);
+	transform-origin: 50% 0; 
+}
+
+@keyframes toright {
+	0% {
+		background-position-x: 0px;
+	} 100% {
+		background-position-x: 500px;
+	}
+}

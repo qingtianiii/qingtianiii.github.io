@@ -1,0 +1,219 @@
+
+
+#header-link li:nth-of-type(4) a {
+	color: lightblue;
+} 
+
+#top-list {
+	max-width: 1200px;
+	margin: 30px auto 0 auto;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+#top-list a {
+	font-size: 21px;
+}
+#top-list a:link, #top-list a:visited {
+	color: blue;
+}
+#top-list a:hover, #top-list a:active {
+	color: lightblue;
+}
+/*li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}*/
+
+/* 左边栏 */
+.aside {
+	width: 200px;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	/*margin: auto;*/
+	border: 1px solid rgba(128, 128, 128, .5);
+	margin-right: 10px;
+}
+.aside li {
+	margin-top: 20px;
+}
+.aside li:last-child {
+	margin-bottom: 20px;
+}
+.aside li:first-child {
+	margin: 15px 30px 0px 30px;
+	border-bottom: 1px solid rgba(0, 0, 0, .5);
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+.aside li:nth-of-type(2) a {
+	color: lightblue!important;
+}
+.aside a {
+	letter-spacing: 20px;
+	margin-right: -20px;
+}
+/* 右边栏 */
+.content {
+	margin-left: 230px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/* 顶部 */
+.top-content {
+	margin-bottom: 20px;
+}
+
+.img-box {
+	height: 200px;
+	margin-bottom: 10px;
+}
+.img-box img {
+	height: 100%;
+	width: 100%;
+}
+.top-content span:nth-of-type(1) {
+	display: block;
+	font-size: 35px;
+	text-align: left;
+	margin-left: 80px;
+}
+.top-content span:nth-of-type(2) {
+	display: block;
+	font-size: 20px;
+	text-align: right;
+	margin-right: 90px;
+	color: grey;
+}
+
+
+/* 歌曲列表 */
+.song-list ul {
+	display: block;
+	overflow: hidden;
+	list-style: none;
+	font-size: 20px;
+	padding: 10px 0;
+}
+.song-list li {
+	float: left;
+}
+.song-list ul:first-child {
+	background-color: #333!important;
+	color: white;
+	cursor: default;
+	padding: 5px 0;
+}
+.song-list ul:nth-of-type(odd) {
+	background-color: white;
+}
+.song-list ul:nth-of-type(even) {
+	background-color: #f5f3f3;
+}
+.song-list .song {
+	width: 30%;
+	text-align: left;
+	margin-left: 50px;
+}
+.song-list .song:first-of-type {
+	margin-left: 100px;
+}
+.song-list .singer {
+	width: 30%;
+	text-align: left;
+}
+.song-list .list-number {
+	width: 50px;
+	text-align: center;
+}
+
+/* 功能 */
+.song-list .function {
+	position: relative;
+	margin-left: 50px;
+}
+.play {
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border-top: 7px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 10px solid grey;
+}
+
+.add {
+	display: inline-block;
+	border-top: 2px solid grey;
+	height: 0;
+	width: 10px;
+	position: relative;
+	top: -6px;
+}
+.add:after {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 4px;
+	border-right: 2px solid grey;
+	height: 10px;
+	width: 0;
+}
+
+.download {
+	display: inline-block;
+	position: relative;
+	border: 2px solid grey;
+	height: 2px;
+	width: 10px;
+	border-top: none;
+	top: 0px;
+	left: 10px;
+}
+.download:after {
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: 4px;
+	height: 10px;
+	width: 3px;
+	background-color: grey;
+}
+.download:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: 2px;
+	border-right: 2px solid grey;
+	border-bottom: 2px solid grey;
+	height: 5px;
+	width: 5px;
+	transform: rotate(45deg);
+}
+
+/* 页码 */ 
+.page {
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+}
+.page li {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: lightblue;
+	float: left;
+	margin-top: 30px;
+	margin-right: 30px;
+	line-height: 30px;
+}
+.page a {
+	display: inline-block;
+	height: 30px!important;
+	color: white!important;
+	font-size: 17px!important;
+	width: 30px;
+	margin: 0 auto;
+}

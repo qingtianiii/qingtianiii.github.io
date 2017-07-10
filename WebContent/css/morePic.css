@@ -1,0 +1,27 @@
+#img-container {
+	margin: 50px auto 0 auto;
+
+	max-width: 1200px;
+	line-height: 0; 
+	/*overflow: hidden;*/
+	/*height: 500px;*/
+}
+li {
+	list-style: none;
+}
+.list {
+	width: 25%;
+	float: left;
+	list-style: none;
+}
+.image {
+	width: 100%;
+}
+.clear {
+	display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  /*display: none;*/
+}

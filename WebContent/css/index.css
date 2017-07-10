@@ -1,0 +1,164 @@
+#header-link li:first-child a {
+	color: lightblue;
+} 
+
+#content, #hit-singer, #top-list, #play-list {
+	min-width: 1200px;
+}
+#hit-singer>span, #top-list>span, #play-list>span, #new-song>span {
+	text-align: center;
+	display: block;
+	font-size: 35px;
+	margin-bottom: 20px;
+	text-shadow: 0 0 10px lightblue;
+	color: black;
+	position: relative;
+}
+#hit-singer>span:after , #top-list>span:after , #play-list>span:after , #new-song>span:after,
+#hit-singer>span:before , #top-list>span:before , #play-list>span:before , #new-song>span:before {
+	content: "";
+	position: absolute;
+	left: 450px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-top: 1px solid black;
+	height: 0px;
+	width: 50px;
+}
+#hit-singer>span:before , #top-list>span:before , #play-list>span:before , #new-song>span:before {
+	right: 450px;
+	left: auto;
+	
+}
+#content {
+	margin: 50px 0;
+}
+/* 新歌轮播 */
+#new-song {
+	margin: 50px auto 150px auto;
+	height: 600px;
+
+	width: 80%;
+	min-width: 1200px;
+}
+.img-box {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.img-box img {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.img-box .active {
+	opacity: 1;
+}
+
+/* 热门歌手  排行榜 */
+#hit-singer, #top-list, #play-list {
+	height: 400px;
+	font-size: 0; /* 去除 inline-block 的间隙 */
+	padding: 0 10% 0 10%;
+	max-width: 1200px;
+	margin: 0 auto 50px auto;
+}
+#hit-singer>a, .list-box,#play-list>a  {
+	font-size: 16px;
+	position: relative;
+	height: 80%;
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+#hit-singer img, #play-list img {
+	height: 100%;
+	width: 100%;
+}
+
+.singer-info, .play-list-info {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	font-size: 16px;
+	height: 20%;
+	background-color: rgba(0, 0, 0, .4);
+	color: white;
+	left: 0;
+	right: 0;
+}
+.singer-info span {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+
+#top-list {
+	height: 400px;
+}
+#top-list>div:nth-of-type(1) {
+	background-color: lightgreen;
+}
+#top-list>div:nth-of-type(2) {
+	background-color: lightblue;
+}
+#top-list>div:nth-of-type(3) {
+	background-color: #e8dbb2;
+}
+#top-list>div:nth-of-type(4) {
+	background-color: #f6857d;
+}
+.list-box {
+	text-align: center;
+}
+.list-box>span {
+	display: inline-block;
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 48px;
+	position: relative;
+}
+.list-box>span:after {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom: 1px solid rgba(255, 255, 255, .8);
+	width: 50%;
+}
+.list-box li {
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: white;
+}
+.list-number {
+	display: inline-block;
+	margin-left: -20px;
+	width: 50px;
+}
+.list-box a {
+	color: white;
+}
+/* 歌单 */
+#play-list {
+	height: 400px;
+}
+.play-list-info {
+	text-align: center;
+
+}
+.play-list-info span {
+	padding-top: 5px;
+	display: inline-block;
+}

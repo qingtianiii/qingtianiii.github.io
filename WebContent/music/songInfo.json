@@ -1,0 +1,36 @@
+{
+  "song": [
+    {
+      "singer": "李健",
+      "songName": "Love is over",
+      "time": "05:12",
+      "fileName": "music/lijian - loveisover",
+      "photo": ["img/lijian1.jpg", "img/lijian2.jpg", "img/lijian3.jpg", "img/lijian4.jpg"],
+      "singerInfo": "李健<br/>中国著名流行男歌手<br/>原组合“水木年华”成员"
+    },
+    {
+      "singer": "金玟岐",
+      "songName": "爱呀",
+      "time": "04:12",
+      "fileName": "music/jinwenqi - aiya",
+      "photo": ["img/jinwenqi1.jpg", "img/jinwenqi2.jpg"],
+      "singerInfo": "金玟岐<br/>新生代流行小天后"
+    },
+    {
+      "singer": "金玟岐",
+      "songName": "岁月神偷",
+      "time": "02:45",
+      "fileName": "music/jinwenqi - suiyueshentou",
+      "photo": ["img/jinwenqi1.jpg", "img/jinwenqi2.jpg"],
+      "singerInfo": "金玟岐<br/>新生代流行小天后"
+    },
+    {
+      "singer": "陈洁仪",
+      "songName": "心动",
+      "time": "03:50",
+      "fileName": "music/chenjieyi - xindong",
+      "photo": ["img/chenjieyi1.jpg"],
+      "singerInfo": "陈洁仪<br/>新加坡著名实力派女歌手及舞台剧演员"
+    }
+  ]
+}

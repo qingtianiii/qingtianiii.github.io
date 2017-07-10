@@ -1,0 +1,301 @@
+#content {
+	margin: 50px auto;
+	max-width: 1200px;
+	font-family: "微软雅黑";
+}
+/* 歌手介绍 */
+.singer-info {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.singer-img {
+	margin-right: 100px;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	float: left;
+}
+.singer-info p:first-of-type {
+	font-weight: bold;
+	font-size: 30px;
+}
+.singer-info p {
+	margin-top: 20px;
+	overflow: hidden;
+}
+/* 热门歌曲 */
+#song-list {
+	text-align: center;
+}
+#song-list span, #album span:first-child, 
+#similar-singer span:first-child, #singer-pic span {
+	display: inline-block;
+	font-size: 30px;
+	margin-bottom: 20px;	
+	
+}
+.song-list ul {
+	display: block;
+	overflow: hidden;
+	list-style: none;
+	font-size: 20px;
+	padding: 10px 0;
+}
+.song-list li {
+	float: left;
+}
+.song-list ul:first-child {
+	background-color: #333!important;
+	color: white;
+	cursor: default;
+	padding: 5px 0;
+}
+.song-list ul:nth-of-type(odd) {
+	background-color: white;
+}
+.song-list ul:nth-of-type(even) {
+	background-color: #f5f3f3;
+}
+.song-list .song {
+	width: 30%;
+	text-align: left;
+	margin-left: 50px;
+}
+.song-list .song:first-of-type {
+	margin-left: 100px;
+}
+.song-list .album {
+	width: 30%;
+	text-align: left;
+}
+.song-list .list-number {
+	width: 50px;
+	text-align: center;
+}
+
+/* 功能 */
+.song-list .function {
+	position: relative;
+	margin-left: 50px;
+}
+.play {
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border-top: 7px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 10px solid grey;
+}
+
+.add {
+	display: inline-block;
+	border-top: 2px solid grey;
+	height: 0;
+	width: 10px;
+	position: relative;
+	top: -6px;
+}
+.add:after {
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: 4px;
+	border-right: 2px solid grey;
+	height: 10px;
+	width: 0;
+}
+
+.download {
+	display: inline-block;
+	position: relative;
+	border: 2px solid grey;
+	height: 2px;
+	width: 10px;
+	border-top: none;
+	top: 0px;
+	left: 10px;
+}
+.download:after {
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: 4px;
+	height: 10px;
+	width: 3px;
+	background-color: grey;
+}
+.download:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: 2px;
+	border-right: 2px solid grey;
+	border-bottom: 2px solid grey;
+	height: 5px;
+	width: 5px;
+	transform: rotate(45deg);
+}
+
+/* 专辑 相似歌手 */
+#album, #similar-singer, #singer-pic {
+	overflow: hidden;
+	margin-top: 50px;
+	text-align: center;
+}
+.album-box, .similar-box, .singer-box {
+	margin: 0 10px;
+	display: block;
+	color: black;
+}
+.album-box {
+	text-align: left;
+}
+.album-box a, .similar-box a {
+	color: black;
+	font-size: 20px;
+}
+.album-box a:hover, .similar-box a:hover {
+	color: lightblue;
+
+}
+.album-box p {
+	color: grey;
+}
+#album li, #similar-singer li, #singer-pic li{
+	float: left;
+	list-style: none;
+	width: 25%
+}
+.img-box {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+#album img, #similar-singer img, #singer-pic img {
+	width: 100%
+}
+#singer-pic {
+	position: relative;
+}
+#singer-pic a {
+	position: absolute;
+	top: 36px;
+	right: 8px;
+	/*display: inline-block;
+	margin-top: 15px;*/
+}
+
+
+
+/* 相似歌手 */ 
+#similar-singer {
+	text-align: center;
+}
+.img-box {
+	margin-bottom: 10px;
+}
+#similar-singer .img-box {
+	border-radius: 50%;
+}
+.similar-box {
+	margin: 0 30px;
+}
+.similar-box span {
+	font-size: 20px;
+}
+
+/* 评论 */ 
+#comment {
+	margin: 20px auto;
+	overflow: hidden;
+	width:80%;
+	font-size: 22px;
+	text-align: center;
+}
+#comment>span {
+	font-size: 30px;
+}	
+.user {
+	margin-top: 20px;
+	text-align: left; /* 让上面的居中还原 */
+}
+.main {
+	min-height: 100px;
+}
+.comment-time {
+	font-size: 20px;
+	color: grey;
+}
+.username {
+	font-weight: bold;
+}
+.head-pic {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.head-pic img {
+	height: 100%;
+	width: 100%;
+}
+.comment-content {
+	margin-left: 120px;
+}
+.good {
+	float: right;
+	margin-right: 10px;
+	font-size: 18px!important;
+	margin-top: 5px;
+}
+.point-good {
+	background-color: rgba(128, 128, 128, .1);
+	font-size: 20px;
+
+}
+
+/* 下方回复 */
+.comment-left {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.comment-left img {
+	height: 100%;
+	width: 100%;
+}
+
+.other-comment {
+	border-top: 1px dashed grey;
+}
+.user-comment {
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-top: 1px dashed grey;
+	padding-top: 15px;
+}
+.user-comment-time {
+	float: left;
+	color: grey;
+	font-size: 15px;
+}
+
+.comment-off {
+	height: 20px;
+	width: 80%;
+	resize: none;
+	vertical-align: bottom;
+	line-height: 20px;
+}
+.comment-on {
+	font-size: 30px;
+	height: 100px;
+	width: 80%;
+	resize: none;
+	vertical-align: bottom;
+}
+.text-box {
+	margin-bottom: 10px;
+}
